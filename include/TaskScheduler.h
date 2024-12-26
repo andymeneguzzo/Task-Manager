@@ -1,3 +1,5 @@
+// Task Scheduler class header file that uses Task and PriorityQueue classes to manage tasks.
+
 #ifndef TASK_SCHEDULER_H
 #define TASK_SCHEDULER_H
 
@@ -22,7 +24,9 @@ class TaskScheduler {
         PriorityQueue taskQueue_;
         std::vector<std::thread> workers_;
         std::vector<std::future<void>> futures_;
-
+        std::atomic<bool> running_;
+        std::mutex queueMutex_;
+        std::condition_variable condition_;
 };
 
 #endif // TASK_SCHEDULER_H
