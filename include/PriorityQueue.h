@@ -1,3 +1,5 @@
+// Priority Queue class header file.
+
 #ifndef PRIOIRTY_QUEUE_H
 #define PRIOIRTY_QUEUE_H
 

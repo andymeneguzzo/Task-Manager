@@ -1,3 +1,5 @@
+// Task.h and PriorityQueue.h are related. Task.h is included in PriorityQueue.h.
+
 #ifndef TASK_H
 #define TASK_H
 
