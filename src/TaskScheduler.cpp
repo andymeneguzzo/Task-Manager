@@ -8,5 +8,3 @@ TaskScheduler::TaskScheduler(size_t numThreads) : running_(false) {
 TaskScheduler::~TaskScheduler() {
     stop();
 }
-
-void 
